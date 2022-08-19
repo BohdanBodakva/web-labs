@@ -122,7 +122,9 @@
 }
 
 .image {
-    width: 270px;
+    margin-top: 10 px;
+    width: 255px;
+    
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -197,7 +199,6 @@
     font-weight: 600;
     font-size: 17px;
     line-height: 60px;
-    /* identical to box height, or 353% */
 
     display: flex;
     align-items: center;
@@ -223,7 +224,7 @@
     color: #FB8F1D;
 
     mix-blend-mode: normal;
-    text-align: left;
+    float: left;
     text-decoration: none;
 }
 
@@ -297,3 +298,9 @@
 
     background: #C4C4C4;
 }
+
+.image-block{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
