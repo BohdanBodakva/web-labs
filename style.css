@@ -1,0 +1,312 @@
+.circle {
+    width: 41px;
+    height: 41px;
+    margin-left: 200px;
+    margin-top: 37px;
+}
+
+.back-grey-color {
+    background-color: #F8F8F8;
+}
+
+.star {
+    width: 23.9px;
+    height: 23.9px;
+    margin-top: 145px;
+}
+
+.margin-top-buttons {
+    margin-top: 37px;
+}
+
+.home-button {
+    margin-left: 197px;
+    text-decoration: none;
+    color: #202336;
+}
+
+.margin-right-buttons {
+    margin-right: 35px;
+    text-decoration: none;
+
+}
+
+.color-button {
+    color: #B8BECD;
+}
+
+.login-button {
+    margin-left: 250px;
+    margin-top: 37px;
+
+    position: absolute;
+    width: 132px;
+    height: 44px;
+
+    border: 1px solid #FB8F1D;
+    color: #FB8F1D;
+    border-radius: 8px;
+
+    background: #FFFFFF;
+}
+
+.register-button {
+    margin-top: 37px;
+    margin-left: 420px;
+    margin-right: 193px;
+
+    position: absolute;
+    width: 132px;
+    height: 44px;
+
+    background: #FB8F1D;
+    color: #FFFFFF;
+    border-radius: 8px;
+
+    border: 1px solid #FFFFFF;
+}
+
+
+.header1 {
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+}
+
+.text1 {
+
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+
+    text-align: left;
+
+
+
+    color: #7D7987;
+
+}
+
+.person1 {
+    width: 599px;
+    height: 542px;
+}
+
+.table1 {
+    margin-left: 197px;
+    margin-right: 197px;
+    margin-top: 175px;
+}
+
+.person2 {
+    width: 380px;
+    margin-left: 245px;
+    margin-top: 189px;
+}
+
+.table2 {
+    margin-left: 197px;
+    margin-right: 197px;
+    margin-top: 30px;
+}
+
+.image {
+    margin-top: 10 px;
+    width: 255px;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.grey-block-margin-top {
+    margin-top: 90px;
+    height: 774px;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.download-button {
+    margin-top: 37px;
+    margin-left: 0px;
+    margin-right: 400px;
+
+    width: 132px;
+    height: 44px;
+
+    background: #FB8F1D;
+    color: #FFFFFF;
+    border-radius: 8px;
+
+    border: 1px solid #FFFFFF;
+}
+
+.text3 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+}
+
+.testimonials {
+    margin-top: 79px;
+}
+
+.edward-newgate {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 48px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.founder-circle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 0.85);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.stories-table {
+    margin-top: 70px;
+    margin-left: 193px;
+}
+
+.view-all {
+    margin-left: 800px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FB8F1D;
+
+    mix-blend-mode: normal;
+}
+
+.images-table {
+    margin-top: 35px;
+    margin-left: 193px;
+    margin-right: 193px;
+}
+
+.read-more {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+
+    margin-left: 5px;
+
+    color: #FB8F1D;
+
+    mix-blend-mode: normal;
+    float: left;
+    text-decoration: none;
+}
+
+.image-text {
+    text-align: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+    color: #7D7987;
+
+    mix-blend-mode: normal;
+}
+
+.image-header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 30px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    text-align: left;
+}
+
+.grey-circle {
+    margin-top: 31px;
+    margin-left: 193px;
+}
+
+.rights-text {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+    margin-left: 795px;
+
+    margin-top: 39px;
+
+    color: #848484;
+
+    mix-blend-mode: normal;
+}
+
+.icon {
+    height: 17px;
+    margin-bottom: 40px;
+}
+
+.twitter {
+    margin-left: 690px;
+    margin-right: 12px;
+}
+
+.social-media-icons {
+    margin-right: 12px;
+    margin-top: 20px;
+}
+
+.line {
+    position: absolute;
+    width: 1150px;
+    height: 0.6px;
+
+    margin-left: 193px;
+
+    background: #C4C4C4;
+}
+
+.image-block {
+    margin: auto;
+}
