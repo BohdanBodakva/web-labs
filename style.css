@@ -67,7 +67,7 @@
 }
 
 
-.header {
+.header1 {
 
     font-family: 'Playfair Display';
     font-style: normal;
@@ -124,7 +124,7 @@
 .image {
     margin-top: 10 px;
     width: 255px;
-    
+
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -221,6 +221,8 @@
     font-size: 15px;
     line-height: 28px;
 
+    margin-left: 5px;
+
     color: #FB8F1D;
 
     mix-blend-mode: normal;
@@ -236,6 +238,9 @@
     font-size: 15px;
     line-height: 26px;
 
+    margin-left: 5px;
+    margin-right: 5px;
+
     color: #7D7987;
 
     mix-blend-mode: normal;
@@ -247,6 +252,9 @@
     font-weight: 700;
     font-size: 19px;
     line-height: 30px;
+
+    margin-left: 5px;
+    margin-right: 5px;
 
     color: #000000;
 
@@ -299,8 +307,6 @@
     background: #C4C4C4;
 }
 
-.image-block{
-    margin-left: 10px;
-    margin-right: 10px;
+.image-block {
+    margin: auto;
 }
-
