@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-home {
+    color: #202336;
+}
+
+.header__nav ul {
+    display: flex;
+    margin-top: 57px;
+}
+
+.header__nav-item {
+    margin-right: 35px;
+}
+
+.header__nav-partner {
+    margin-right: 0;
+}
+
+.header__image img {
+    width: 41px;
+    margin-top: 37px;
+}
+
+.header__log-buttons button {
+    width: 132px;
+    height: 44px;
+    margin-right: 18px;
+    border-radius: 8px;
+    margin-top: 35px;
+}
+
+.header__login {
+    border: 1px solid #FB8F1D;
+    color: #FB8F1D;
+    background: #FFFFFF;
+}
+
+.header__register {
+    background: #FB8F1D;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}

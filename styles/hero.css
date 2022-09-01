@@ -1,0 +1,42 @@
+.hero__button {
+    background: #FB8F1D;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+}
+
+.hero__image img {
+    height: 542px;
+}
+
+.hero-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__inner {
+    margin: auto 0;
+}
+
+.hero__inner .title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+    mix-blend-mode: normal;
+}
+
+p {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+}

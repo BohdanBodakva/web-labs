@@ -2,170 +2,194 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>My Website</title>
 
-    <title>My Webpage</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-
-    <header class="header">
-
-        <a class="home-button margin-right-buttons" href="">Home</a>
-
-        <a class="color-button margin-right-buttons" href="">Destinations</a>
-
-        <a class="color-button margin-right-buttons" href="">About</a>
-
-        <a class="color-button margin-right-buttons" href="">Partner</a>
-
-
-
-
-        <img class="circle" src="images/circle.png" alt="cannot display image">
-
-
-
-
-        <button class="login-button" type="submit">Login</button>
-
-        <button class="register-button" type="submit">Register</button>
-
-
-
-
-    </header>
-
-
-
-    <table class="table1">
-        <tr>
-            <th>
-                <h1 class="header1 left-align">Guides by Thousand <br> Sunny</h1>
-                <p class="text1">
-                    Packed with tips and advice from our on-the-ground <br>
-                    experts, our city guides app (iOS and Android) is the <br>
-                    ultimate resource before and during a trip.
+    <section class="hero">
+        <div class="container">
+            <header class="header">
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="" class="header__nav-item header__nav-home">Home</a></li>
+                        <li><a href="" class="header__nav-item">Destinations</a></li>
+                        <li><a href="" class="header__nav-item">About</a></li>
+                        <li><a href="" class="header__nav-item header__nav-partner">Partner</a></li>
+                    </ul>
+                </nav>
+                <div class="header__image">
+                    <img src="images/circle.png" alt="cannot display image">
+                </div>
+                <div class="header__log-buttons">
+                    <button class="header__login">Login</button>
+                    <button class="header__register">Register</button>
+                </div>
+            </header>
+        </div>
+        <div class="container hero-section">
+            <div class="hero__inner">
+                <h1 class="title">Guides by Thousand<br> Sunny</h1>
+                <p>
+                    Packed with tips and advice from our
+                    on-the-ground<br> experts, our city guides
+                    app (iOS and Android) is the<br> ultimate
+                    resource before and during a trip.
                 </p>
-                <button class="download-button" type="submit">Download</button>
-            </th>
-            <th>
-                <img class="person1" src="images/person1.png" alt="cannot display image">
-            </th>
-        </tr>
-    </table>
-
-    <div class="back-grey-color grey-block-margin-top">
-        <table class="table2">
-            <tr>
-                <th>
-                    <h1 class="header1 testimonials">Testimonials</h1>
-
-                    <img class="star" src="images/star.png" alt="cannot display image">
-                    <img class="star" src="images/star.png" alt="cannot display image">
-                    <img class="star" src="images/star.png" alt="cannot display image">
-                    <img class="star" src="images/star.png" alt="cannot display image">
-                    <img class="star" src="images/star.png" alt="cannot display image">
-
-                    <p class="text3">
-                        "Quisque in lacus a urna fermentum <br>
-                        euismod. Integer mi nibh, dapibus ac <br>
-                        scelerisque eu, facilisis quis purus. Morbi <br>
-                        blandit sit amet turpis nec" <br>
-                    </p>
-
-                    <p class="edward-newgate">Edward Newgate</p>
-                    <p class="founder-circle">Founder Circle</p>
-                </th>
-                <th>
-                    <img class="person2" src="images/person2.png" alt="cannot display image">
-                </th>
-            </tr>
-        </table>
-    </div>
-
-    <table class="stories-table">
-        <tr>
-            <th>
+                <br>
+                <div>
+                    <button class="hero__button">Download</button>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="images/person1.png">
+            </div>
+        </div>
+    </section>
+    <section class="second-section">
+        <div class="testimonials-block container">
+            <div class="second-section__inner">
+                <h1 class="second-section__title">Testimonials</h1>
+                <div class="star-image">
+                    <img src="images/star.png">
+                    <img src="images/star.png">
+                    <img src="images/star.png">
+                    <img src="images/star.png">
+                    <img src="images/star.png">
+                </div>
+                <p>
+                    “Quisque in lacus a urna fermentum<br> euismod.
+                    Integer mi nibh, dapibus ac<br> scelerisque eu,
+                    facilisis quis purus. Morbi<br> blandit sit amet
+                    turpis nec”
+                </p>
+                <br>
+                <p class="edward-newgate">Edward Newgate</p>
+                <p class="founder-circle">Founder Circle</p>
+            </div>
+            <div class="second-section__image">
+                <img src="images/person2.png">
+            </div>
+        </div>
+    </section>
+    <section class="third-section">
+        <div class="third-section__header container">
+            <div class="third-section__header-title">
                 <h1>Trending stories</h1>
-            </th>
-            <th>
-                <h6 class="view-all">View all ></h6>
-            </th>
-        </tr>
-    </table>
-
-    <table class="images-table">
-        <tr>
-            <th class="image-block">
-                <img class="image" src="images/image_3.png" alt="cannot display image">
-                <h3 class="image-header">The many benefits of
-                    taking a healing holiday</h3>
-                <p class="image-text">
-                    'Helaing holidays' are on the rise
-                    to help maximise your health and happines...
+            </div>
+            <div class="third-section__header-view-all">
+                <a href="">View all></a>
+            </div>
+        </div>
+        <div class="third-section__images-block container">
+            <div class="image-block first-image-block">
+                <div class="tour-image">
+                    <img src="images/image_3.png" alt="cannot display image">
+                </div>
+                <p class="tour-header">
+                    The many benefits of<br> taking a healing holiday
                 </p>
-                <a class="read-more" href="">Read more</a>
-            </th>
-            <th class="image-block">
-                <img class="image" src="images/image_4.png" alt="cannot display image">
-                <h3 class="image-header">The best Kyoto restaurant
-                    to try Japanese food</h3>
-                <p class="image-text">
-                    From tofu to teahouses, here's our guide to Kyoto's best restaurants
-                    to visit...
+                <div class="tour-text">
+                    <p>
+                        'Helaing holidays' are on the rise<br>
+                        to help maximise your health and<br> happines...
+                    </p>
+                </div>
+                <div class="tour-link">
+                    <a href="">Read more</a>
+                </div>
+            </div>
+            <div class="image-block">
+                <div class="tour-image">
+                    <img src="images/image_4.png" alt="cannot display image">
+                </div>
+                <p class="tour-header">
+                    The best Kyoto restaurant<br>
+                    to try Japanese food
                 </p>
-                <a class="read-more" href="">Read more</a>
-            </th>
-            <th class="image-block">
-                <img class="image" src="images/image_5.png" alt="cannot display image">
-                <h3 class="image-header">Skip Chichen Itza and head
-                    to this remote Yucatan</h3>
-                <p class="image-text">
-                    It's remote and challenging to get,
-                    but braving the jungle and exploring...
+                <div class="tour-text">
+                    <p>
+                        From tofu to teahouses, here's our<br>
+                        guide to Kyoto's best restaurants<br>
+                        to visit...
+                    </p>
+                </div>
+                <div class="tour-link">
+                    <a href="">Read more</a>
+                </div>
+            </div>
+            <div class="image-block">
+                <div class="tour-image">
+                    <img src="images/image_5.png" alt="cannot display image">
+                </div>
+                <p class="tour-header">
+                    Skip Chichen Itza and head<br>
+                    to this remote Yucatan
                 </p>
-                <a class="read-more" href="">Read more</a>
-            </th>
-            <th class="image-block">
-                <img class="image" src="images/image_6.png" alt="cannot display image">
-                <h3 class="image-header">Surf's up at these beginner
-                    spots around the world</h3>
-                <p class="image-text">
-                    If learning to surf has in on your to-
-                    do list for a while, the good news
-                    is...
+                <div class="tour-text">
+                    <p>
+                        It's remote and challenging to get,<br>
+                        but braving the jungle and exploring<br>
+                        these ruins without the...
+                    </p>
+                </div>
+                <div class="tour-link">
+                    <a href="">Read more</a>
+                </div>
+            </div>
+            <div class="image-block">
+                <div class="tour-image">
+                    <img src="images/image_6.png" alt="cannot display image">
+                </div>
+                <p class="tour-header">
+                    Surf's up at these beginner<br>
+                    spots around the world
                 </p>
-                <a class="read-more" href="">Read more</a>
-            </th>
-        </tr>
-    </table>
-
-    <footer class="back-grey-color">
-        <table>
-            <tr>
-                <th>
-                    <img class="circle" src="images/circle_2.png" alt="cannot display image">
-                </th>
-                <th>
-                    <p class="rights-text">©2020 Thousand Sunny. All rights reserved</p>
-                </th>
-            </tr>
-        </table>
-        <hr class="line">
-        <img class="icon social-media-icons twitter" src="images/twitter.png" alt="cannot display image">
-        <img class="icon social-media-icons facebook" src="images/facebook.png" alt="cannot display image">
-        <img class="icon social-media-icons instagram" src="images/instagram.png" alt="cannot display image">
-        <img class="icon social-media-icons linkedin" src="images/linkedin.png" alt="cannot display image">
-        <img class="icon social-media-icons youtube" src="images/youtube.png" alt="cannot display image">
-    </footer>
-
-
-
-
-
-
+                <div class="tour-text">
+                    <p>
+                        If learning to surf has in on your to-<br>
+                        do list for a while, the good news<br>
+                        is: it's never too late...
+                    </p>
+                </div>
+                <div class="tour-link">
+                    <a href="">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fourth-section">
+        <footer class="footer">
+            <div class="footer__head container">
+                <div class="footer__head-image">
+                    <img src="images/circle_2.png" alt="cannot display image">
+                </div>
+                <div class="footer__head-text">
+                    <p>©2020 Thousand Sunny. All rights reserved</p>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__icons container">
+                <div class="footer-icon">
+                    <a href=""><img src="images/twitter.png" alt="cannot display image"></a>
+                </div>
+                <div class="footer-icon">
+                    <a href=""><img src="images/facebook.png" alt="cannot display image"></a>
+                </div>
+                <div class="footer-icon">
+                    <a href=""><img src="images/instagram.png" alt="cannot display image"></a>
+                </div>
+                <div class="footer-icon">
+                    <a href=""><img src="images/linkedin.png" alt="cannot display image"></a>
+                </div>
+                <div class="footer-icon">
+                    <a href=""><img src="images/youtube.png" alt="cannot display image"></a>
+                </div>
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
