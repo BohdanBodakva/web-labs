@@ -20,6 +20,7 @@
 
 .third-section__header-view-all {
     margin-top: 30px;
+    margin-right: 90px;
 }
 
 .third-section__header-view-all a {
@@ -37,17 +38,19 @@
 }
 
 .tour-image img {
-    width: 274px;
+    width: 260px;
 }
 
 .third-section__images-block {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+    margin-right: 270px;
 }
 
 .image-block {
     margin-left: 20px;
+    justify-content: space-between;
 }
 
 .first-image-block {
@@ -60,7 +63,6 @@
     font-weight: 700;
     font-size: 19px;
     line-height: 30px;
-    /* or 158% */
 
 
     color: #000000;
@@ -74,7 +76,6 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
-    /* or 173% */
 
 
     color: #7D7987;
@@ -88,10 +89,83 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 28px;
-    /* identical to box height, or 187% */
 
 
     color: #FB8F1D;
 
     mix-blend-mode: normal;
+}
+
+.read-more-image {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .tour-image {
+        display: none;
+    }
+
+    .third-section__header-view-all {
+        display: none;
+    }
+
+    .tour-text {
+        display: none;
+    }
+
+    .third-section__images-block {
+        flex-direction: column;
+    }
+
+    .third-section__header-title {
+        margin: 0 auto;
+    }
+
+    .tour-header p {
+        width: 100%;
+    }
+
+    .third-section__images-block {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .read-more-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        margin-bottom: 0;
+    }
+
+    .read-more-image img {
+        width: 15px;
+    }
+
+    .tour-header {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 2840px) {
+    .third-section__header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .third-section__header-title {
+        margin-right: 820px;
+    }
+
+    .third-section__header-view-all {
+        margin-right: 110px;
+    }
+
+    .third-section__images-block {
+        display: flex;
+        justify-content: center;
+    }
+
 }

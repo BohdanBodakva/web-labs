@@ -1,6 +1,6 @@
 .container {
-    margin: 0 197px;
-    max-width: 1200px;
+    margin-left: 191px;
+    margin-right: 191px;
 }
 
 a {
@@ -10,4 +10,28 @@ a {
 
 li {
     display: block;
+}
+
+body {
+    width: auto;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 2840px) {
+    .header-container {
+        margin-left: 24%;
+        margin-right: 24%;
+    }
 }

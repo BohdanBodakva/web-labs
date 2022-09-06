@@ -1,34 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>My Website</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <section class="hero">
-        <div class="container">
-            <header class="header">
-                <nav class="header__nav">
-                    <ul>
-                        <li><a href="" class="header__nav-item header__nav-home">Home</a></li>
-                        <li><a href="" class="header__nav-item">Destinations</a></li>
-                        <li><a href="" class="header__nav-item">About</a></li>
-                        <li><a href="" class="header__nav-item header__nav-partner">Partner</a></li>
-                    </ul>
-                </nav>
-                <div class="header__image">
-                    <img src="images/circle.png" alt="cannot display image">
-                </div>
-                <div class="header__log-buttons">
-                    <button class="header__login">Login</button>
-                    <button class="header__register">Register</button>
-                </div>
-            </header>
+    <header class="header container header-container">
+        <nav class="header__nav">
+            <ul>
+                <li><a href="" class="header__nav-item header__nav-home">Home</a></li>
+                <li><a href="" class="header__nav-item">Destinations</a></li>
+                <li><a href="" class="header__nav-item">About</a></li>
+                <li><a href="" class="header__nav-item header__nav-partner">Partner</a></li>
+            </ul>
+        </nav>
+        <div class="header__image">
+            <img src="images/circle.png" alt="cannot display image">
         </div>
+        <div class="header__log-buttons">
+            <button class="header__login">Login</button>
+            <button class="header__register">Register</button>
+        </div>
+    </header>
+    <header class="header-2">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="">
+                    <li>Destinations</li>
+                </a>
+                <a href="">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Partner</li>
+                </a>
+            </ul>
+        </div>
+        <div class="header-2__log-buttons">
+            <button class="header-2__login">Login</button>
+            <button class="header-2__register">Register</button>
+        </div>
+    </header>
+    <section class="hero">
         <div class="container hero-section">
             <div class="hero__inner">
                 <h1 class="title">Guides by Thousand<br> Sunny</h1>
@@ -66,7 +92,8 @@
                     turpis nec”
                 </p>
                 <br>
-                <p class="edward-newgate">Edward Newgate</p>
+                <p class="edward-newgate"><b>Edward Newgate</b></p>
+
                 <p class="founder-circle">Founder Circle</p>
             </div>
             <div class="second-section__image">
@@ -80,11 +107,14 @@
                 <h1>Trending stories</h1>
             </div>
             <div class="third-section__header-view-all">
-                <a href="">View all></a>
+                <a href="">View all</a>
             </div>
         </div>
         <div class="third-section__images-block container">
             <div class="image-block first-image-block">
+                <div class="read-more-image">
+                    <img src="images/circle.png" alt="cannot display image">
+                </div>
                 <div class="tour-image">
                     <img src="images/image_3.png" alt="cannot display image">
                 </div>
@@ -102,6 +132,9 @@
                 </div>
             </div>
             <div class="image-block">
+                <div class="read-more-image">
+                    <img src="images/circle.png" alt="cannot display image">
+                </div>
                 <div class="tour-image">
                     <img src="images/image_4.png" alt="cannot display image">
                 </div>
@@ -119,8 +152,12 @@
                 <div class="tour-link">
                     <a href="">Read more</a>
                 </div>
+
             </div>
             <div class="image-block">
+                <div class="read-more-image">
+                    <img src="images/circle.png" alt="cannot display image">
+                </div>
                 <div class="tour-image">
                     <img src="images/image_5.png" alt="cannot display image">
                 </div>
@@ -138,8 +175,12 @@
                 <div class="tour-link">
                     <a href="">Read more</a>
                 </div>
+
             </div>
             <div class="image-block">
+                <div class="read-more-image">
+                    <img src="images/circle.png" alt="cannot display image">
+                </div>
                 <div class="tour-image">
                     <img src="images/image_6.png" alt="cannot display image">
                 </div>
@@ -157,39 +198,41 @@
                 <div class="tour-link">
                     <a href="">Read more</a>
                 </div>
+
             </div>
         </div>
     </section>
-    <section class="fourth-section">
-        <footer class="footer">
-            <div class="footer__head container">
-                <div class="footer__head-image">
-                    <img src="images/circle_2.png" alt="cannot display image">
-                </div>
-                <div class="footer__head-text">
-                    <p>©2020 Thousand Sunny. All rights reserved</p>
-                </div>
+
+    <footer class="footer">
+        <div class="footer__head container">
+            <div class="footer__head-image">
+                <img src="images/circle_2.png" alt="cannot display image">
             </div>
-            <hr>
-            <div class="footer__icons container">
-                <div class="footer-icon">
-                    <a href=""><img src="images/twitter.png" alt="cannot display image"></a>
-                </div>
-                <div class="footer-icon">
-                    <a href=""><img src="images/facebook.png" alt="cannot display image"></a>
-                </div>
-                <div class="footer-icon">
-                    <a href=""><img src="images/instagram.png" alt="cannot display image"></a>
-                </div>
-                <div class="footer-icon">
-                    <a href=""><img src="images/linkedin.png" alt="cannot display image"></a>
-                </div>
-                <div class="footer-icon">
-                    <a href=""><img src="images/youtube.png" alt="cannot display image"></a>
-                </div>
+            <div class="footer__head-text">
+                <p class="footer-rights">©2020 Thousand Sunny. All rights reserved</p>
+                <p class="footer-rights-2">©2020</p>
             </div>
-        </footer>
-    </section>
+        </div>
+        <hr class="container">
+        <div class="footer__icons container">
+            <div class="footer-icon">
+                <a href=""><img src="images/twitter.png" alt="cannot display image"></a>
+            </div>
+            <div class="footer-icon">
+                <a href=""><img src="images/facebook.png" alt="cannot display image"></a>
+            </div>
+            <div class="footer-icon">
+                <a href=""><img src="images/instagram.png" alt="cannot display image"></a>
+            </div>
+            <div class="footer-icon">
+                <a href=""><img src="images/linkedin.png" alt="cannot display image"></a>
+            </div>
+            <div class="footer-icon">
+                <a href=""><img src="images/youtube.png" alt="cannot display image"></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

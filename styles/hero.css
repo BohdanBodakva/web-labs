@@ -8,7 +8,8 @@
 }
 
 .hero__image img {
-    height: 542px;
+    height: 480px;
+    margin-right: 100px;
 }
 
 .hero-section {
@@ -39,4 +40,42 @@ p {
     line-height: 30px;
     color: #7D7987;
     mix-blend-mode: normal;
+}
+
+.hero__button:hover {
+    transition: 0.8s;
+    background: #FFFFFF;
+    color: #FB8F1D;
+    border-radius: 10px;
+    border-color: #FB8F1D;
+}
+
+@media screen and (max-width: 600px) {
+    .hero__image {
+        display: none;
+    }
+
+    .hero-section {
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 326px) {
+    .hero-section {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 2840px) {
+    .hero-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__inner {
+        margin-right: 70px;
+    }
 }
