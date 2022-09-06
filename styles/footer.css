@@ -61,7 +61,7 @@
         margin-right: 0;
         width: 90%;
         margin: 0 auto;
-        margin-top: 25px;
+        margin-top: 10px;
     }
 
     .footer-rights {
@@ -71,11 +71,24 @@
     .footer-rights-2 {
         display: flex;
         margin-top: 35px;
+
+    }
+
+    .footer__head-text {
+        right: 0;
     }
 
     .footer {
         margin-top: 50px;
         bottom: 0;
-        height: 720px;
+        height: 150px;
+    }
+
+    .footer__icons {
+        margin-top: 18px;
+    }
+
+    .footer__head-image {
+        display: none;
     }
 }

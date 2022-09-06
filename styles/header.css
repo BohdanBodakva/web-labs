@@ -40,12 +40,21 @@
     border: 1px solid #FB8F1D;
     color: #FB8F1D;
     background: #FFFFFF;
+    border-color: #FB8F1D;
 }
 
 .header__login:hover {
     transition: 0.8s;
     background: #FB8F1D;
     color: white;
+    border-radius: 10px;
+    border-color: #FB8F1D;
+}
+
+.header__login:not(:hover) {
+    transition: 0.8s;
+    background: #FFFFFF;
+    color: #FB8F1D;
     border-radius: 10px;
     border-color: #FB8F1D;
 }
@@ -62,6 +71,14 @@
     color: #FB8F1D;
     border-radius: 10px;
     border-color: #FB8F1D;
+}
+
+.header__register:not(:hover) {
+    transition: 0.8s;
+    background: #FB8F1D;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
 }
 
 .header-2 {
@@ -98,18 +115,27 @@
         margin-top: 35px;
         position: sticky;
         background-color: #FFFFFF;
+        border-color: #FFFFFF;
     }
 
     .header-2__log-buttons button:hover {
         transition: 0.8s;
-        background: rgb(0, 0, 0);
-        color: #FB8F1D;
+        background: #FB8F1D;
+        color: white;
         border-radius: 10px;
-        border-color: rgb(0, 0, 0);
+        border-color: black;
+    }
+
+    .header-2__log-buttons button:not(:hover) {
+        transition: 0.8s;
+        background: white;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+        border-color: black;
     }
 }
 
-@media screen and (min-width: 2840px) {
+@media screen and (min-width: 1600px) {
     .header-container {
         margin-left: 24%;
         margin-right: 24%;

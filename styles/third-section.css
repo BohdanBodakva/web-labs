@@ -149,14 +149,14 @@
     }
 }
 
-@media screen and (min-width: 2840px) {
+@media screen and (min-width: 1600px) {
     .third-section__header {
         display: flex;
         justify-content: center;
     }
 
     .third-section__header-title {
-        margin-right: 820px;
+        margin-right: 730px;
     }
 
     .third-section__header-view-all {
