@@ -100,13 +100,11 @@ sortByPurityAscButton.addEventListener("click", (event) => {
 });
 
 const countTotalPrice = (gems) => {
-  const totalPrice = gems.reduce((a, b) => a + parseInt(b.price), 0);
+  const totalPrice = gems.reduce((accumulator, gem) => accumulator + parseInt(gem.price), 0);
   renderTotalPrice(totalPrice);
 }
 
 
-
-renderGemsList(gems);
 
 
 
