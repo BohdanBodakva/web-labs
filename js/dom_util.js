@@ -6,6 +6,7 @@ const purityInput = document.getElementById("create-input-purity");
 const sortInput = document.getElementById("create-input-sort");
 const mineralityInput = document.getElementById("create-input-minerality");
 const gemsContainer = document.getElementById("gems-container");
+const totalPriceContainer = document.getElementById("total-price-container");
 
 const getGemId = (id) => `gem-${id}`;
 
@@ -24,6 +25,16 @@ const gemTemplate = ({ id, name, weight, price, hardness, purity, sort, minerali
     <p class="card-text">Purity: ${purity} cond. units</p> 
   </div>
 </li>`;
+
+const totalPriceTemplate = (totalPrice) => `<h3><b>${totalPrice} $</b></h3>`;
+
+export const renderTotalPrice = (totalPrice) => {
+  totalPriceContainer.innerHTML = "";
+  totalPriceContainer.insertAdjacentHTML(
+    "afterbegin",
+    totalPriceTemplate(totalPrice)
+  );
+};
 
 export const clearInputs = () => {
   nameInput.value = "";
@@ -52,13 +63,14 @@ export const getInputValues = () => {
   };
 };
 
-export const renderGems = (gem) => {
+export const renderGemsList = (gems) => {
   gemsContainer.innerHTML = "";
-
-  for (const gem of gems) {
-    addItemToPage(gem);
+  for (const i in gems) {
+    addGemToPage(gems[i]);
   }
-}
+};
+
+
 
 
 

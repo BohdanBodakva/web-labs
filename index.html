@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
 </head>
 
@@ -66,27 +66,41 @@
                 </form>
 
             </div>
-            <div class="find-gem">
-
-                <h2>Find gem</h2>
-                <input type="text" id="find-input-name">
-                <br><br>
-                <button type="button" id="find-button" class="button">Find</button>
-                <button type="button" id="clear-find-button" class="button">Clear</button>
-                <br><br>
-                <button type="button" id="cancel-find-button" class="button">Cancel</button>
-
+            <div class="operations">
+                <div class="find-gem">
+                    <h2>Find gem</h2>
+                    <form>
+                        <div>
+                            <label for="" class="form-label"></label>
+                            <input type="text" id="find-input-name">
+                        </div>
+                        <br><br>
+                        <button type="button" id="find-button" class="button">Find</button>
+                        <button type="button" id="cancel-find-button" class="button">Cancel</button>
+                    </form>
+                </div>
+                <div class="sort-by-purity">
+                    <h2>Sort by purity</h2>
+                    <button id="sort-by-purity-asc-button" class="button" type="submit">Sort ASC</button>
+                    <button id="sort-by-purity-desc-button" class="button" type="submit">Sort DESC</button>
+                </div>
+                <div class="count-total-price">
+                    <h2>Total price</h2>
+                    <div id="total-price-container"></div>
+                </div>
             </div>
+
+
         </div>
+
 
         <div class="right-block">
 
             <ul id="gems-container"></ul>
 
         </div>
+
     </div>
-
-
 
 
     <script type="module" src="./js/index.js"></script>
