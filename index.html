@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+
+    <h2 class="title">Gems</h2>
+
+    <div class="main-div">
+
+        <div class="left-block">
+            <div class="create-gem">
+                <form id="create-form">
+
+                    <h2>Create gem</h2>
+                    <div>
+                        <label for="" class="form-label">Unique name:</label>
+                        <input type="text" id="create-input-name" class="input-field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Weight (carats):</label>
+                        <input type="number" id="create-input-weight" class="input-field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Price ($):</label>
+                        <input type="number" id="create-input-price" class="input-field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Hardness (by Mohs scale)):</label>
+                        <input type="number" id="create-input-hardness" class="input-field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Purity (relative scale):</label>
+                        <input type="number" id="create-input-purity" class="input-field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Sort:</label>
+                        <div>
+                            <select id="create-input-sort">
+                                <option value="Diamond">Diamond</option>
+                                <option value="Ruby">Ruby</option>
+                                <option value="Sapphire">Sapphire</option>
+                                <option value="Emerald">Emerald</option>
+                            </select>
+                        </div><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Minerality:</label>
+                        <div>
+                            <select id="create-input-minerality">
+                                <option value="mineral">mineral</option>
+                                <option value="non-mineral">non-mineral</option>
+                            </select>
+                        </div>
+                        <br>
+                    </div>
+                    <button type="submit" id="create-button" class="button">Create</button>
+                </form>
+
+            </div>
+            <div class="operations">
+                <div class="find-gem">
+                    <h2>Find gem</h2>
+                    <form>
+                        <div>
+                            <label for="" class="form-label">Name:</label><br>
+                            <input type="text" id="find-input-name">
+                        </div>
+                        <br><br>
+                        <button type="button" id="find-button" class="button">Find</button>
+                        <button type="button" id="cancel-find-button" class="button">Cancel</button>
+                    </form>
+                </div>
+                <div class="sort-by-purity">
+                    <h2>Sort by purity</h2>
+                    <button id="sort-by-purity-asc-button" class="button" type="submit">Sort ASC</button>
+                    <button id="sort-by-purity-desc-button" class="button" type="submit">Sort DESC</button>
+                </div>
+                <div class="count-total-price">
+                    <h2>Total price</h2>
+                    <div id="total-price-container"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="right-block">
+
+            <ul id="gems-container"></ul>
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
