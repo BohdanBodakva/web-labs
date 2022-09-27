@@ -1,0 +1,189 @@
+body {
+    overflow-y: hidden;
+}
+
+.main-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-top: 40px;
+    width: 1250px;
+    height: 610px;
+}
+
+.left {
+    margin-left: 75px;
+}
+
+.create-gem-div {
+    margin-bottom: 25px;
+}
+
+.left-block {
+    margin-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: fit-content;
+    height: 440px;
+}
+
+.create-gem {
+    margin-bottom: 50px;
+}
+
+.button {
+    border-radius: 8px;
+    background: rgb(223, 214, 214);
+    width: 80px;
+    height: 30px;
+}
+
+.card-image {
+    width: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    flex: 0 0 24%;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.right-block {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    height: 520px;
+}
+
+.title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.operations {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.find-gem,
+.sort-by-purity,
+.count-total-price {
+    margin-bottom: 40px;
+}
+
+#sort-by-purity-desc-button {
+    width: fit-content;
+}
+
+.right-block-div {
+    display: flex;
+    justify-content: center;
+}
+
+.card-name {
+    text-align: center;
+}
+
+.create-gem-div {
+    border: 1px solid black;
+    border-radius: 15px;
+    height: fit-content;
+    width: 175px;
+    padding: 18px;
+}
+
+.create-gem-div a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-div {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.main-div-2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin-right: 420px;
+    margin-bottom: 20px;
+    height: 550px;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.create-button {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.create-button p {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cancel-button {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.card-edit-button {
+    margin-right: 12px;
+}
