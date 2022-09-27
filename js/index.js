@@ -259,17 +259,17 @@ const addGemToPage = ({ id, name, weight, price, hardness, purity, sort, mineral
 };
 
 const getInputValues = () => {
-    // if (validateInputForms()) {
-    return {
-        name: nameInput.value,
-        weight: weightInput.value,
-        price: priceInput.value,
-        hardness: hardnessInput.value,
-        purity: purityInput.value,
-        sort: sortInput.value,
-        minerality: mineralityInput.value
-    }
-    // };
+    if (validateInputForms()) {
+        return {
+            name: nameInput.value,
+            weight: weightInput.value,
+            price: priceInput.value,
+            hardness: hardnessInput.value,
+            purity: purityInput.value,
+            sort: sortInput.value,
+            minerality: mineralityInput.value
+        }
+    };
 };
 
 const renderGemsList = (gems) => {
