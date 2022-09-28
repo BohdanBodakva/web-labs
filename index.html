@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gems</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="title">Gems</h2>
+    </header>
+
+    <div class="main-div">
+        <div class="left">
+            <div class="create-gem-div" id="create-gem-div">
+                <a href="">Create</a>
+            </div>
+            <div class="left-block" id="left-block">
+                <div class="operations">
+                    <div class="find-gem">
+                        <h2>Find gem</h2>
+                        <form>
+                            <div>
+                                <label for="" class="form-label">Name:</label><br>
+                                <input type="text" id="find-input-name">
+                            </div>
+                            <br>
+                            <button type="button" id="find-button" class="button">Find</button>
+                            <button type="button" id="cancel-find-button" class="button">Cancel</button>
+                        </form>
+                    </div>
+                    <div class="sort-by-purity">
+                        <h2>Sort by purity</h2>
+                        <button id="sort-by-purity-asc-button" class="button" type="submit">Sort ASC</button>
+                        <button id="sort-by-purity-desc-button" class="button" type="submit">Sort DESC</button>
+                    </div>
+                    <div class="count-total-price">
+                        <h2>Total price</h2>
+                        <div id="total-price-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-block" id="right-block">
+            <ul id="gems-container"></ul>
+        </div>
+        <div class="create-gem-block hidden" id="create-gem-block">
+            <div class="main-div-2">
+                <h2 id="create-gem-title">Create gem</h2>
+                <h2 id="edit-gem-title" class="hidden">Edit gem</h2>
+                <div class="create-div">
+                    <div>
+                        <label for="" class="form-label">Unique name:</label>
+                        <input type="text" id="create-input-name" class="input-field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Weight (carats):</label>
+                        <input type="number" id="create-input-weight" class="input-field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Price ($):</label>
+                        <input type="number" id="create-input-price" class="input-field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Hardness (by Mohs scale)):</label>
+                        <input type="number" id="create-input-hardness" class="input-field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Purity (relative scale):</label>
+                        <input type="number" id="create-input-purity" class="input-field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Sort:</label>
+                        <div>
+                            <select id="create-input-sort">
+                                <option value="Diamond">Diamond</option>
+                                <option value="Ruby">Ruby</option>
+                                <option value="Sapphire">Sapphire</option>
+                                <option value="Emerald">Emerald</option>
+                            </select>
+                        </div><br>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="create-button button" id="create-gem-button">
+                        <p id="create-text">Create</p>
+                    </button><br>
+                    <button class="create-button button hidden" id="edit-gem-button">
+                        <p id="edit-text">Edit</p>
+                    </button><br>
+                    <button class="cancel-button button" id="cancel-create-gem-button">Cancel</button>
+                    <button class="cancel-button button hidden" id="cancel-edit-gem-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
