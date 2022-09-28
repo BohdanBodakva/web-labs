@@ -63,12 +63,20 @@ createButton.addEventListener("click", (event) => {
         hardness,
         purity,
         sort
-    }).then(refetchAllGems);
+    }).then((res) => {
+        if (res.status === 400) {
+            throw new Error("Gem with name '" + uniqueName + "' already exists!");
+        }
 
-    createGemBlock.style.display = "none";
-    rightBlock.style.display = "block";
-    leftBlock.style.display = "block";
-    createGemDiv.style.display = "block";
+        refetchAllGems();
+
+        createGemBlock.style.display = "none";
+        rightBlock.style.display = "block";
+        leftBlock.style.display = "block";
+        createGemDiv.style.display = "block";
+
+    }).catch(e => alert(e));
+
 });
 
 findButton.addEventListener("click", async (event) => {
