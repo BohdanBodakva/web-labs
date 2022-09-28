@@ -30,9 +30,6 @@ const sortInput = document.getElementById("create-input-sort");
 const gemsContainer = document.getElementById("gems-container");
 const totalPriceContainer = document.getElementById("total-price-container");
 
-let gems = [];
-let currentGems = [];
-
 createGemDiv.addEventListener("click", (event) => {
     event.preventDefault();
 
@@ -74,14 +71,19 @@ createButton.addEventListener("click", (event) => {
     createGemDiv.style.display = "block";
 });
 
-findButton.addEventListener("click", (event) => {
+findButton.addEventListener("click", async (event) => {
     event.preventDefault();
 
-    const foundGems = gems.filter(gem => gem.uniqueName.search(findInput.value) !== -1);
+    const allGems = await getAllGems();
+    let foundGems = [];
+
+    for (const i in allGems) {
+        if (allGems[i].uniqueName.search(findInput.value) !== -1) {
+            foundGems.push(allGems[i]);
+        }
+    }
 
     renderGemsList(foundGems);
-
-    currentGems = foundGems;
     countTotalPrice(foundGems);
 });
 
@@ -89,32 +91,38 @@ cancelFindButton.addEventListener("click", (event) => {
     event.preventDefault();
 
     findInput.value = "";
-    renderGemsList(gems);
 
-    countTotalPrice(gems);
-    currentGems = gems;
+    refetchAllGems();
 });
 
-sortByPurityDescButton.addEventListener("click", (event) => {
+sortByPurityDescButton.addEventListener("click", async (event) => {
     event.preventDefault();
 
-    const sortedGems = gems.sort((gem1, gem2) => {
+    const allGems = Object.values(await getAllGems());
+
+    console.log(allGems);
+
+    const sortedGems = allGems.sort((gem1, gem2) => {
         return gem1.purity - gem2.purity;
     });
 
     renderGemsList(sortedGems);
-    currentGems = sortedGems;
+    countTotalPrice(sortedGems);
 });
 
-sortByPurityAscButton.addEventListener("click", (event) => {
+sortByPurityAscButton.addEventListener("click", async (event) => {
     event.preventDefault();
 
-    const sortedGems = gems.sort((gem1, gem2) => {
+    const allGems = Object.values(await getAllGems());
+
+    console.log(allGems);
+
+    const sortedGems = allGems.sort((gem1, gem2) => {
         return gem2.purity - gem1.purity;
     });
 
     renderGemsList(sortedGems);
-    currentGems = sortedGems;
+    countTotalPrice(sortedGems);
 });
 
 const countTotalPrice = (gems) => {
@@ -297,12 +305,6 @@ const validateInputForms = () => {
     return true;
 };
 
-
-
-
-
-// ================================================================================================
-
 const refetchAllGems = async () => {
     const allGems = await getAllGems();
     renderGemsList(allGems);
@@ -311,6 +313,9 @@ const refetchAllGems = async () => {
 
 
 
+
+// ================================================================================================
+// WORKING WITH SERVER
 // ================================================================================================
 
 const BASE_URL = "http://localhost:8080/api";
@@ -352,6 +357,9 @@ const deleteGem = (id) => {
 };
 
 
+
+// =========================================================================================
+// EXECUTED CODE
 // =========================================================================================
 
 refetchAllGems();
