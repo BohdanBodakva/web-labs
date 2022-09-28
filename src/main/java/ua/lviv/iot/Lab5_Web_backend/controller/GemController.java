@@ -27,27 +27,14 @@ public class GemController {
     }
 
     @PostMapping("/")
-    public String saveGem(@RequestBody GemEntity gem){
-        try {
-            return gemService.addGem(gem);
-        }catch (SortNotFoundException | GemAlreadyExistsException ex) {
-            return ex.getMessage();
-        }
+    public String saveGem(@RequestBody GemEntity gem) throws SortNotFoundException, GemAlreadyExistsException {
+        return gemService.addGem(gem);
     }
 
     @GetMapping("/{id}")
-    public GemEntity showGemById(@PathVariable Long id) {
-
-        try {
-            return gemService.getGemById(id);
-        } catch (GemNotFoundException e) {
-            throw new ResponseStatusException(
-                    HttpStatus.NOT_FOUND, "entity not found"
-            );
-        }
-
+    public GemEntity showGemById(@PathVariable Long id) throws GemNotFoundException {
+        return gemService.getGemById(id);
     }
-
 
     @GetMapping("/")
     public Map<Long, GemEntity> showAllGems(){
@@ -55,24 +42,13 @@ public class GemController {
     }
 
     @PutMapping("{id}")
-    public String updateGemById(@RequestBody GemEntity gem, @PathVariable Long id){
-        try {
-            return gemService.updateGemById(gem, id);
-        } catch (GemNotFoundException e) {
-
-            throw new ResponseStatusException(
-                    HttpStatus.NOT_FOUND, e.getMessage()
-            );
-        }
+    public String updateGemById(@RequestBody GemEntity gem, @PathVariable Long id) throws GemNotFoundException {
+        return gemService.updateGemById(gem, id);
     }
 
     @DeleteMapping("/{id}")
-    public String deleteGem(@PathVariable Long id){
-        try {
-            return gemService.deleteGemById(id);
-        } catch (GemNotFoundException e) {
-            return e.getMessage();
-        }
+    public String deleteGem(@PathVariable Long id) throws GemNotFoundException {
+        return gemService.deleteGemById(id);
     }
 
     @DeleteMapping("/")

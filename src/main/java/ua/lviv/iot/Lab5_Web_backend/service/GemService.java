@@ -1,5 +1,6 @@
 package ua.lviv.iot.Lab5_Web_backend.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ua.lviv.iot.Lab5_Web_backend.entity.GemEntity;
 import ua.lviv.iot.Lab5_Web_backend.entity.SortOfPreciousGemEntity;
@@ -20,6 +21,7 @@ public class GemService {
 
     private GemRepo gemRepo;
 
+    @Autowired
     public GemService(GemRepo gemRepo){
         this.gemRepo = gemRepo;
     }
@@ -42,12 +44,11 @@ public class GemService {
         if(opt.isEmpty()){
             throw new GemNotFoundException("There is no gem with id=" + id);
         }
-        GemEntity gem = gemRepo.findById(id).get();
-        return gem;
+        return gemRepo.findById(id).get();
     }
 
     public Map<Long, GemEntity> getAllGems(){
-        List<GemEntity> gemList = (List<GemEntity>) gemRepo.findAll();
+        List<GemEntity> gemList = gemRepo.findAll();
         Map<Long, GemEntity> gemMap = new HashMap<>();
         for(GemEntity gem : gemList){
             gemMap.put(gem.getId(), gem);
