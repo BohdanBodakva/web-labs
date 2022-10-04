@@ -14,8 +14,8 @@ export default function Header() {
             </div>
             <nav className="nav-bar">
                 <ul>
-                    <li>Home</li>
-                    <li>Catalogue</li>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Catalogue</li></a>
                 </ul>
             </nav>
         </header>

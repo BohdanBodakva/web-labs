@@ -9,7 +9,7 @@ export default function Hero() {
                 <p className="sale-text">
                     Buy two sets of gems and win sale up to 45% every day!
                 </p><br />
-                <p className="read-more"><b>Read more</b></p>
+                <a href="" className="read-more"><b>Read more</b></a>
             </div>
         </section>
     )

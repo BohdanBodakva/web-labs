@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 110px;
+    margin-top: 190px;
     background-color: rgb(208, 208, 208);
     height: 190px;
     padding: 30px;
@@ -29,8 +29,15 @@
 }
 
 .contact-us {
+    transition: 0.8s;
     margin-top: 15px;
     text-align: center;
+}
+
+.contact-us:hover {
+    transition: 0.8s;
+    margin-top: 25px;
+    font-size: 20px;
 }
 
 hr {

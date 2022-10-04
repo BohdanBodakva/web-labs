@@ -16,8 +16,12 @@ export default function SecondSection() {
                     </div>
                     <div className="body-text">
                         <p>
-                            Buy one ruby and get opportunity to win one of our giftsdvlk dskhjavgjadsfg vjkdfajkg adfjkvjad fkvjkdfa jkbvdfjvn dfvjkndfjvnjdfanvjdf
+                            Buy one ruby and get opportunity to win one of our gifts.
+                            The promotion ends in 3 days.
                         </p>
+                    </div>
+                    <div className="more">
+                        <a href="">More</a>
                     </div>
                 </div>
                 <div className="part-body central-part-body">
@@ -26,8 +30,12 @@ export default function SecondSection() {
                     </div>
                     <div className="body-text">
                         <p>
-                            Buy one ruby and get opportunity to win one of our giftsdvlk dskhjavgjadsfg vjkdfajkg adfjkvjad fkvjkdfa jkbvdfjvn dfvjkndfjvnjdfanvjdf
+                            The latest collections of precious gems are available right now!
+                            Hurry to buy in time!
                         </p>
+                    </div>
+                    <div className="more">
+                        <a href="">More</a>
                     </div>
                 </div>
                 <div className="part-body">
@@ -36,10 +44,17 @@ export default function SecondSection() {
                     </div>
                     <div className="body-text">
                         <p>
-                            Buy one ruby and get opportunity to win one of our giftsdvlk dskhjavgjadsfg vjkdfajkg adfjkvjad fkvjkdfa jkbvdfjvn dfvjkndfjvnjdfanvjdf
+                            The limited series of sapphire named "Elite Prestige"
+                            goes sale this year!
                         </p>
                     </div>
+                    <div className="more">
+                        <a href="">More</a>
+                    </div>
                 </div>
+            </div>
+            <div className="all-catalogue">
+                <a href="">All catalogue</a>
             </div>
         </section>
     )

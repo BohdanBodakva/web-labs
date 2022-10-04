@@ -18,7 +18,7 @@
 
 .sale-title {
     font-size: 55px;
-    margin-left: 30px;
+    margin-left: 12px;
 }
 
 .sale-text {
@@ -28,7 +28,13 @@
 }
 
 .read-more {
+    transition: 0.8s;
     font-size: 20px;
     margin-left: 80px;
     color: rgb(255, 153, 0);
+}
+
+.read-more:hover {
+    transition: 0.8s;
+    font-size: 25px;
 }
