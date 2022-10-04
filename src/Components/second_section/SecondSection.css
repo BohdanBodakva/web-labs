@@ -1,0 +1,56 @@
+.second-section {
+    margin-top: 100px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalogue-part {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.part-body {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 13px;
+    width: 380px;
+}
+
+.body-text {
+    text-align: center;
+    padding: 25px;
+}
+
+.part-title {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.body-image {
+    display: flex;
+    justify-content: center;
+}
+
+#gem1 {
+    height: 230px;
+    margin-bottom: 22px;
+    margin-top: 15px;
+}
+
+#gems2 {
+    width: 500px;
+}
+
+#gem3 {
+    width: 350px;
+}
+
+.central-part-body {
+    width: 450px;
+}
