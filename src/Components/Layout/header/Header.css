@@ -22,32 +22,7 @@
     padding: 2px;
 }
 
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding-top: 12px;
-    padding-right: 15px;
-}
-
-li {
-    margin-right: 15px;
-}
-
-li:hover {
-    transition: 0.8s;
-    font-size: 20px;
-}
-
-li:not(:hover) {
-    transition: 0.8s;
-}
-
 .title-div {
     margin-left: 60px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}

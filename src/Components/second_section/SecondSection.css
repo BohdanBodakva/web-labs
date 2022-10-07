@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("");
 }
 
 .catalogue-part {
@@ -14,90 +13,10 @@
     margin-top: 40px;
 }
 
-.part-body {
-    transition: 0.8s;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(62, 129, 62);
-    border-radius: 13px;
-    width: 380px;
-    height: 480px;
-    background-color: rgb(223, 253, 209);
-}
 
-.part-body:hover {
-    transition: 0.8s;
-    width: 500px;
-}
-
-.body-text {
-    font-size: 20px;
-    text-align: center;
-    padding: 25px;
-}
 
 .part-title {
     display: flex;
     justify-content: center;
     font-size: 36px;
-}
-
-.body-image {
-    display: flex;
-    justify-content: center;
-}
-
-#gem1 {
-    height: 230px;
-    margin-bottom: 22px;
-    margin-top: 15px;
-}
-
-#gems2 {
-    width: 500px;
-}
-
-#gem3 {
-    width: 350px;
-}
-
-.central-part-body {
-    width: 450px;
-}
-
-.more {
-    transition: 0.8s;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.more a {
-    font-weight: bold;
-    color: rgb(255, 153, 0);
-}
-
-.more:hover {
-    transition: 0.8s;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.all-catalogue {
-    transition: 0.8s;
-    margin-top: 30px;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgb(193, 240, 142);
-}
-
-.all-catalogue:hover {
-    transition: 0.8s;
-    padding: 18px;
-}
-
-.all-catalogue a {
-    color: rgb(255, 153, 0);
-    font-weight: bold;
 }

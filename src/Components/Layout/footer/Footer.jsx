@@ -1,9 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import footerGem from "../../../images/footerGem.png";
-import twitter from '../../../assets/twitter.svg'
-import facebook from '../../../assets/facebook.svg'
-import phone from '../../../assets/phone.svg'
+import SocialMediaContacts from "./social_media_contacts/SocialMediaContacts";
 
 export default function Footer() {
     return (
@@ -20,11 +18,7 @@ export default function Footer() {
                 <hr />
                 <div className="lower-footer">
                     <div className="central-div">
-                        <div className="assets">
-                            <img src={twitter} alt="twitter" />
-                            <img src={facebook} className="facebook-asset" alt="facebook" />
-                            <img src={phone} alt="phone" />
-                        </div>
+                        <SocialMediaContacts />
                         <div className="contact-us">
                             Contact us
                         </div>
