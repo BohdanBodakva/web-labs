@@ -38,7 +38,7 @@ export default function CatalogueItem(props) {
                 <p><b>Sort:</b> {props.sort}</p>
                 <p><b>Hardness:</b> {props.hardness} by Mohs</p>
                 <p><b>Purity:</b> {props.purity} rel. units</p>
-                <p><b>Price:</b> {props.weight} $</p>
+                <p><b>Price:</b> {props.price} $</p>
             </div>
             <BuyButton />
         </div>
