@@ -1,18 +1,29 @@
 import './App.css';
 import Layout from './Components/Layout/Layout';
-import Hero from "./Components/hero/Hero";
-import SecondSection from "./Components/second_section/SecondSection";
+import HomePage from './Modules/HomePage';
+import CataloguePage from './Modules/CataloguePage';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 
-function App() {
+export default function App() {
   return (
-    <>
+    <Router>
       <Layout>
-        <Hero />
-        <SecondSection />
+        <AppRoutes />
       </Layout>
-    </>
+    </Router>
   );
 }
 
-export default App;
+function AppRoutes() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/catalogue" element={<CataloguePage />} />
+    </Routes>
+  )
+}

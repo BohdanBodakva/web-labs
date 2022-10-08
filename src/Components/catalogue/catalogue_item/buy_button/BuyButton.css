@@ -1,0 +1,14 @@
+.buy-button{
+    width: 130px;
+    height: 55px;
+    background-color: rgb(239, 235, 235);
+    color: rgb(255, 153, 0);
+    border: 2px solid rgb(255, 153, 0);
+    border-radius: 15px;    
+}
+
+.buy-button-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
