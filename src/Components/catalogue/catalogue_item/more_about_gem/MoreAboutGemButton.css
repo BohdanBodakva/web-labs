@@ -1,22 +1,22 @@
-.buy-button{    
+.more-about-gem-button {
     transition: 0.8s;
     width: 130px;
     height: 55px;
     background-color: rgb(239, 235, 235);
     color: rgb(255, 153, 0);
     border: 2px solid rgb(255, 153, 0);
-    border-radius: 15px;    
+    border-radius: 15px;
 }
 
-.buy-button-div{
+.more-about-gem-button-div {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.buy-button:hover{
+.more-about-gem-button:hover {
     transition: 0.8s;
-    width: 160px;
-    height: 68px;
-    font-size: 22px;
+    border-color: green;
+    color: green;
+    box-shadow: 0 0 45px 22px rgba(130, 227, 85, 0.4);
 }

@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 40px;
+    background-color: rgb(223, 253, 209);
 }
 
 .catalogue-wrap{
@@ -11,4 +12,8 @@
     flex-direction: column;
     margin-left: 145px;
     margin-right: 145px;
+}
+
+.catalogue-section{
+    background-color: rgb(223, 253, 209);
 }

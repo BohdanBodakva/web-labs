@@ -1,11 +1,11 @@
 import React from "react";
 import "./Catalogue.css";
 import CatalogueItem from "./catalogue_item/CatalogueItem";
-import ToYourCartButton from "./to_your_cart_button/ToYourCartButton";
 
 const gems = [
     {
         id: 1,
+        image: "https://www.cooksongold.com/images-prod/61TOADTF.jpg",
         uniqueName: "Nephrite",
         price: 27000,
         hardness: 14,
@@ -14,6 +14,7 @@ const gems = [
     },
     {
         id: 2,
+        image: "https://www.cooksongold.com/images-prod/61RUBP01.jpg",
         uniqueName: "Kyanite",
         price: 17000,
         hardness: 21,
@@ -22,6 +23,7 @@ const gems = [
     },
     {
         id: 3,
+        image: "https://www.cooksongold.com/images-prod/61MFR20D.jpg",
         uniqueName: "Lapis",
         price: 96000,
         hardness: 19,
@@ -30,6 +32,7 @@ const gems = [
     },
     {
         id: 4,
+        image: "https://www.cooksongold.com/images-prod/61LBPC28.jpg",
         uniqueName: "Malachite",
         price: 11000,
         hardness: 24,
@@ -38,6 +41,7 @@ const gems = [
     },
     {
         id: 5,
+        image: "https://www.cooksongold.com/images-prod/61EMRC40.jpg",
         uniqueName: "Zircon",
         price: 14500,
         hardness: 10,
@@ -46,6 +50,7 @@ const gems = [
     },
     {
         id: 6,
+        image: "https://www.cooksongold.com/images-prod/61SAPR64.jpg",
         uniqueName: "Tourmaline",
         price: 54000,
         hardness: 18,
@@ -62,10 +67,12 @@ function RenderGems() {
 
 export default function Catalogue() {
     return (
-        <div className="catalogue-wrap">
-            <div className="catalogue-div">
-                <RenderGems />
+        <section className="catalogue-section">
+            <div className="catalogue-wrap">
+                <div className="catalogue-div">
+                    <RenderGems />
+                </div>
             </div>
-        </div>
+        </section>
     )
 }

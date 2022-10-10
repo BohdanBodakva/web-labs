@@ -1,13 +1,13 @@
 .catalogue-item {
     transition: 0.8s;
-    height: 540px;
+    height: 460px;
     border: 2px solid green;
-    background-color: rgb(223, 253, 209);
     display: flex;
     flex-direction: column;
     flex: 0 0 27%;
     border-radius: 15px;
     margin-bottom: 60px;
+    background-color: white;
 }
 
 .catalogue-item:hover {
@@ -22,7 +22,7 @@
 }
 
 .item-image img {
-    width: 140px;
+    width: 210px;
     padding-top: 15px;
 }
 
