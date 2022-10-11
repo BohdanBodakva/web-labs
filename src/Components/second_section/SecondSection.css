@@ -1,0 +1,22 @@
+.second-section {
+    margin-top: 100px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+}
+
+.catalogue-part {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+
+.part-title {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
