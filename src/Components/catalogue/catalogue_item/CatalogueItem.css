@@ -10,11 +10,6 @@
     background-color: white;
 }
 
-.catalogue-item:hover {
-    transition: 0.8s;
-    flex: 0 0 38%;
-}
-
 .item-image,
 .item-title {
     display: flex;
@@ -30,4 +25,10 @@
     display: flex;
     flex-direction: column;
     margin-left: 70px;
+}
+
+.catalogue-div {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 27%;
 }

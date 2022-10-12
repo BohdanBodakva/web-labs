@@ -7,6 +7,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import GemPage from './Modules/GemPage';
 
 
 export default function App() {
@@ -24,6 +25,7 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/catalogue" element={<CataloguePage />} />
+      <Route path="/catalogue/:id" element={<GemPage />} />
     </Routes>
   )
 }

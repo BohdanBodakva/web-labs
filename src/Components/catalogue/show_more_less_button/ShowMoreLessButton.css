@@ -1,0 +1,30 @@
+.show-more-less {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 27%;
+    justify-content: space-between;
+}
+
+.s-m-l-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.show-more-less-button {
+    transition: 0.8s;
+    width: 130px;
+    height: 55px;
+    background-color: rgb(213, 208, 208);
+    color: rgb(15, 13, 8);
+    border: 2px solid rgb(32, 29, 25);
+    border-radius: 15px;
+}
+
+.show-more-less-button:hover {
+    transition: 0.8s;
+    border-color: green;
+    color: green;
+    box-shadow: 0 0 45px 10px rgba(47, 49, 46, 0.4);
+}
+
