@@ -9,7 +9,7 @@ export default function CataloguePart() {
     const text1 = "Buy one ruby and get opportunity to win one of our gifts." +
         "The promotion ends in 3 days.";
 
-    const text2 = "The latest collections of precious gems are available right now!" +
+    const text2 = "The latest collections of precious gems are available right now! " +
         "Hurry to buy in time!";
 
     const text3 = "The limited series of sapphire named 'Elite Prestige' " +

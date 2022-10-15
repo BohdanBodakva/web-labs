@@ -13,9 +13,9 @@ import GemPage from './Modules/GemPage';
 export default function App() {
   return (
     <Router>
-      <Layout>
-        <AppRoutes />
-      </Layout>
+        <Layout>
+          <AppRoutes />
+        </Layout>
     </Router>
   );
 }

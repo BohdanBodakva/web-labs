@@ -4,14 +4,15 @@
     flex-direction: column;
     border: 1px solid rgb(62, 129, 62);
     border-radius: 13px;
-    width: 380px;
-    height: 480px;
+    width: 390px;
+    height: 510px;
     background-color: rgb(223, 253, 209);
+    margin-bottom: 60px;
 }
 
 .part-body:hover {
     transition: 0.8s;
-    width: 500px;
+    width: 460px;
 }
 
 .body-text {
@@ -28,19 +29,12 @@
     width: 570px;
 }
 
-#gem1 {
-    width: 200px;
-}
-
-#gems2 {
-    width: 480px;
-}
-
-#gem3 {
-    width: 350px;
-}
-
 .body-image {
     display: flex;
     justify-content: center;
+}
+
+.body-image img {
+    padding-top: 50px;
+    width: 320px;
 }

@@ -8,16 +8,16 @@ export default function CatalogueItem(props) {
     return (
         <div className="catalogue-item">
             <div className="item-image">
-                <img src={props.image} alt="gem" />
+                <img src={props.gem.image} alt="gem" />
             </div>
             <div className="item-title">
-                <h2>{props.uniqueName}</h2>
+                <h2>{props.gem.uniqueName}</h2>
             </div>
             <div className="item-text">
-                <p><b>Sort:</b> {props.sort}</p>
-                <p><b>Price:</b> {props.price} $</p>
+                <p><b>Sort:</b> {props.gem.sort}</p>
+                <p><b>Price:</b> {props.gem.price} $</p>
             </div>
-            <MoreAboutGemButton>{props}</MoreAboutGemButton>
+            <MoreAboutGemButton gem={props.gem}></MoreAboutGemButton>
         </div>
     )
 }

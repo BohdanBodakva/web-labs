@@ -1,15 +1,22 @@
 .show-more-less {
+    width: 1300px;
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 27%;
     justify-content: space-between;
 }
 
-.s-m-l-div{
+.show-less-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s-m-l-div {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-}
+} 
 
 .show-more-less-button {
     transition: 0.8s;
@@ -26,5 +33,4 @@
     border-color: green;
     color: green;
     box-shadow: 0 0 45px 10px rgba(47, 49, 46, 0.4);
-}
-
+} 

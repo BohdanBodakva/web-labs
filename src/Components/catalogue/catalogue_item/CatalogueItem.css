@@ -8,7 +8,11 @@
     border-radius: 15px;
     margin-bottom: 60px;
     background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
 }
+
+
 
 .item-image,
 .item-title {
@@ -25,10 +29,4 @@
     display: flex;
     flex-direction: column;
     margin-left: 70px;
-}
-
-.catalogue-div {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 27%;
 }

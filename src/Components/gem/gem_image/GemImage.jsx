@@ -4,7 +4,7 @@ import "./GemImage.css";
 export default function GemImage(props) {
     return (
         <div className="gem-image-div">
-            <img src={props.children.image} />
+            <img src={props.gem.image} />
         </div>
     )
 }
