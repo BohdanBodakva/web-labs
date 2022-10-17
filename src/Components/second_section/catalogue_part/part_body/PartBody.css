@@ -1,0 +1,40 @@
+.part-body {
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(62, 129, 62);
+    border-radius: 13px;
+    width: 390px;
+    height: 510px;
+    background-color: rgb(223, 253, 209);
+    margin-bottom: 60px;
+}
+
+.part-body:hover {
+    transition: 0.8s;
+    width: 460px;
+}
+
+.body-text {
+    font-size: 20px;
+    text-align: center;
+    padding: 25px;
+}
+
+.central-part-body {
+    width: 450px;
+}
+
+.central-part-body:hover {
+    width: 570px;
+}
+
+.body-image {
+    display: flex;
+    justify-content: center;
+}
+
+.body-image img {
+    padding-top: 50px;
+    width: 320px;
+}

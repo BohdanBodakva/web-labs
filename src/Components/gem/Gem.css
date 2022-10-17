@@ -1,0 +1,20 @@
+.gem-div {
+    margin-top: 150px;
+    border: 2px solid green;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+    padding-right: 150px;
+    background-color: rgb(223, 253, 209);
+}
+
+.body-d-div {
+    display: flex;
+    justify-content: center;
+}
+
+.gem-d-div {
+    display: flex;
+    flex-direction: row;
+}
