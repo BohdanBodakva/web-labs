@@ -13,6 +13,29 @@ public class GemEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String uniqueName;
+    private String imageUrl;
+
+    @Override
+    public String toString() {
+        return "GemEntity{" +
+                "id=" + id +
+                ", uniqueName='" + uniqueName + '\'' +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", sort=" + sort +
+                ", weight=" + weight +
+                ", price=" + price +
+                ", hardness=" + hardness +
+                ", purity=" + purity +
+                '}';
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
     public GemEntity(String uniqueName) {
         this.uniqueName = uniqueName;

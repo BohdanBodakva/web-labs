@@ -10,10 +10,9 @@ import ua.lviv.iot.Lab5_Web_backend.exceptions.SortNotFoundException;
 import ua.lviv.iot.Lab5_Web_backend.repository.GemRepo;
 
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import javax.swing.text.html.parser.Entity;
+import java.util.*;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -55,6 +54,37 @@ public class GemService {
         }
         return gemMap;
     }
+
+    public Map<Long, GemEntity> getAllGemsBySort(String sort){
+        List<GemEntity> gemList = gemRepo.findAll()
+                .stream()
+                .filter((gem) -> gem.getSort().toString().equals(sort))
+                .toList();
+        Map<Long, GemEntity> gemMap = new HashMap<>();
+        for(GemEntity gem : gemList){
+            gemMap.put(gem.getId(), gem);
+        }
+        return gemMap;
+    }
+
+//    public Map<Long, GemEntity> getAllGemsSorted(List<GemEntity> gems, String sorted){
+//        List<GemEntity> gemList = null;
+//        if(Objects.equals(sorted, "Descending")){
+//            gemList = gems.stream()
+//                    .sorted((g1, g2) -> (int) (g1.getPrice() - g2.getPrice())).toList();
+//        }else if(Objects.equals(sorted, "Ascending")){
+//            gemList = gems.stream()
+//                    .sorted((g1, g2) -> (int) (g2.getPrice() - g1.getPrice())).toList();
+//        }
+//        if(gemList == null){
+//            gemList = gems;
+//        }
+//        Map<Long, GemEntity> gemMap = new HashMap<>();
+//        for(GemEntity gem : gemList){
+//            gemMap.put(gem.getId(), gem);
+//        }
+//        return gemMap;
+//    }
 
     public String updateGemById(GemEntity gem, Long id) throws GemNotFoundException {
 

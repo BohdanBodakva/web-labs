@@ -5,11 +5,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import ua.lviv.iot.Lab5_Web_backend.entity.GemEntity;
+import ua.lviv.iot.Lab5_Web_backend.entity.SortOfPreciousGemEntity;
 import ua.lviv.iot.Lab5_Web_backend.exceptions.GemAlreadyExistsException;
 import ua.lviv.iot.Lab5_Web_backend.exceptions.GemNotFoundException;
 import ua.lviv.iot.Lab5_Web_backend.exceptions.SortNotFoundException;
 import ua.lviv.iot.Lab5_Web_backend.service.GemService;
 
+import java.util.List;
 import java.util.Map;
 
 
@@ -37,7 +39,12 @@ public class GemController {
     }
 
     @GetMapping("/")
-    public Map<Long, GemEntity> showAllGems(){
+    public Map<Long, GemEntity> showAllGems(@RequestParam(value = "sort", required = false) String sort){
+
+        if(sort != null){
+            return gemService.getAllGemsBySort(sort);
+        }
+
         return gemService.getAllGems();
     }
 
