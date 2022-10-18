@@ -7,7 +7,6 @@ export const apiGetAll = async () => {
 }
 
 
-
 export const apiGetAllWithSort = async (sort) => {
     return (await axios.get('http://localhost:8080/api/gems/', {
         params: { sort: sort }

@@ -4,10 +4,21 @@ import "./FindByName.css";
 export default function FindByName(props) {
     const [enteredText, setEnterdText] = useState("");
 
+
+
+    const hC = (e) => {
+        (() => props.searchGems(e.target.value))();
+        setEnterdText(e.target.value);
+    }
+
+    const da = () => {
+        setEnterdText("");
+    }
+
     return (
         <div className="find-div">
-            <input onChange={props.handleChange} onClick={props.clear} />
-            <label>   Search</label>
+            <input type="text" onChange={hC} placeholder="Enter name" value={enteredText} />
+            <button onClick={da}>Clear</button>
         </div>
     )
 }

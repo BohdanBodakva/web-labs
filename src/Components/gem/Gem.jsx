@@ -26,7 +26,7 @@ export default function Gem(props) {
         apiGetById(props.id).then((result) =>
             setGem(result)
         );
-        setTimeout(() => setLoading(false), 1000);
+        setTimeout(() => setLoading(false), 300);
     }, []);
 
 

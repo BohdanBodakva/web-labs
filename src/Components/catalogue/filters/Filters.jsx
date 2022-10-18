@@ -12,7 +12,7 @@ function RenderGems(props) {
     )
 }
 
-export default function Filter(props) {
+export default function Filter() {
     const [gems, setGems] = useState([]);
     const [display, setDisplay] = useState([]);
 
@@ -25,7 +25,7 @@ export default function Filter(props) {
                 setGems(Object.values(result));
                 setDisplay(Object.values(result));
             })
-        setTimeout(() => setLoading(false), 1000);
+        setTimeout(() => setLoading(false), 300);
 
     }, []);
 
@@ -46,6 +46,7 @@ export default function Filter(props) {
                                         { id: 5, name: 'Sapphire' }
                                     ]
                                 } handleChange={(e) => {
+                                    setLoading(true);
                                     if (e.target.value === "all") {
                                         setDisplay(gems);
                                     } else {
@@ -53,8 +54,7 @@ export default function Filter(props) {
                                             setDisplay(Object.values(result));
                                         })
                                     }
-
-
+                                    setTimeout(() => setLoading(false), 300);
                                 }} />
                                 <label>   Sort</label>
                             </div>
@@ -66,6 +66,7 @@ export default function Filter(props) {
                                         { id: 3, name: 'Descending' }
                                     ]
                                 } handleChange={(e) => {
+                                    setLoading(true);
                                     if (e.target.value === "sort") {
                                         setDisplay(gems);
                                     } else if (e.target.value === "Ascending") {
@@ -73,6 +74,7 @@ export default function Filter(props) {
                                     } else {
                                         setDisplay([...display].sort((g1, g2) => { return g2.price - g1.price }));
                                     }
+                                    setTimeout(() => setLoading(false), 300);
                                 }} />
                                 <label>   Sort by price</label>
                             </div>
@@ -81,19 +83,22 @@ export default function Filter(props) {
                 </div>
                 <div className="r-c">
                     <div className="find-d">
-                        <FindByName handleChange={(e) => {
-                            setDisplay([...display].filter(gem => gem.uniqueName.toLowerCase().search(e.target.value.toLowerCase()) !== -1))
-                        }} clear={e => e = ""} />
+                        <FindByName searchGems={(value) => {
+                            setLoading(true);
+                            setDisplay([...display].filter(gem => gem.uniqueName.toLowerCase().search(value.toLowerCase()) !== -1))
+                            setTimeout(() => setLoading(false), 300);
+                        }} />
                     </div>
                     <div className="cancel-filters-button">
                         <button onClick={() => {
+                            setLoading(true);
                             setDisplay([...gems]);
+                            setTimeout(() => setLoading(false), 300);
                         }}>Cancel filters</button>
                     </div>
                 </div>
             </div>
             <div className="catalogue-div">
-                {console.log(display)}
                 {loading ? <Loading /> : <RenderGems gems={display} />}
             </div>
         </>
