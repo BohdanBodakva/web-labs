@@ -1,0 +1,30 @@
+input {
+    border: 2px solid green;
+    border-radius: 7px;
+    width: 160px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 1000;
+    font-family: inherit;
+    border-radius: 6px;
+    color: var(--input-color);
+    border: 2px solid green;
+    height: 38px;
+    color: #1e944e;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    font-size: 15px;
+    color: rgb(138, 138, 138);
+}
+
+button {
+    margin-left: 10px;
+    width: 70px;
+    height: 30px;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
