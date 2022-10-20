@@ -1,0 +1,14 @@
+.gem-text-div {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.gem-text-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.gem-text-title{
+    margin: 0 auto;
+}
