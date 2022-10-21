@@ -1,5 +1,3 @@
-import { act } from "react-dom/test-utils";
-
 const defaultCartState = {
     gemsInCart: []
 }
@@ -29,6 +27,9 @@ export const gemCartReducer = (state = defaultCartState, action) => {
         case "REMOVE_GEM":
             const arr = [...state.gemsInCart].filter(gem => gem.id !== action.gem.id);
             return { ...state, gemsInCart: arr };
+
+        case "REMOVE_ALL":
+            return { ...state, gemsInCart: [] }
 
         default:
             return state

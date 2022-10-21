@@ -11,3 +11,10 @@ export function removeGemFromCartAction(gemToRemove) {
         gem: gemToRemove
     }
 }
+
+export function removeAllGemsFromCartAction() {
+    return {
+        type: "REMOVE_ALL",
+        gem: null
+    }
+}

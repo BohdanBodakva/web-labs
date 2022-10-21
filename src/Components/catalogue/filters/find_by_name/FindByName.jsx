@@ -11,14 +11,14 @@ export default function FindByName(props) {
         setEnterdText(e.target.value);
     }
 
-    const da = () => {
+    const setText = () => {
         setEnterdText("");
     }
 
     return (
         <div className="find-div">
-            <input type="text" onChange={hC} placeholder="Enter name" value={enteredText} />
-            <button onClick={da}>Clear</button>
+            <input className="c-input" type="text" onChange={hC} placeholder="Enter name" value={enteredText} />
+            <button className="c-button" onClick={setText}>Clear</button>
         </div>
     )
 }

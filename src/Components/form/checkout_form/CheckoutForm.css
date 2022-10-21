@@ -1,0 +1,108 @@
+.s-s {
+    background-color: rgb(223, 253, 209);
+    padding: 40px;
+    margin-top: 150px;
+}
+
+.my-form {
+    border: 2px solid green;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 450px;
+    background-color: white;
+}
+
+.buy-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-form-div {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.s-button {
+    transition: 0.8s;
+    width: 260px;
+    height: 65px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: rgb(200, 241, 200);
+    margin-top: 8px;
+}
+
+.s-button:hover {
+    transition: 0.8s;
+    border-color: green;
+    color: green;
+    box-shadow: 0 0 45px 22px rgba(130, 227, 85, 0.4);
+}
+
+input {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    border: 2px solid green;
+    border-radius: 7px;
+    width: 160px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 1000;
+    font-family: inherit;
+    border-radius: 6px;
+    color: var(--input-color);
+    border: 2px solid green;
+    height: 38px;
+    color: #1e944e;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.center-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.t-form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+select {
+    width: 165px;
+    border: 2px solid green;
+    border-radius: 10px;
+    height: 46px;
+    font-size: 16px;
+}
+
+.month-income-label {
+    margin-left: 60px;
+}
+
+.age-label {
+    margin-left: 28px;
+}
