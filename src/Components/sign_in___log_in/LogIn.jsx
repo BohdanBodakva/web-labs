@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "./SignIn.css";
 import { Formik, Form, useField, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/authentification_context/Auth";
 
 const CustomTextInput = ({ label, onChange, ...props }) => {
     const [field, meta] = useField(props)
@@ -25,32 +26,7 @@ const CustomTextInput = ({ label, onChange, ...props }) => {
 export default function LogIn() {
 
     const navigate = useNavigate();
-
-    // function magicDate(ref, msg) {
-    //     return this.test({
-    //       name: 'magicDate',
-    //       exclusive: false,   
-    //       params: { reference: ref ? ref.path : undefined },
-    //       test: function (value) {
-    //         const startDate = this.resolve(ref)
-    //         console.log("sdfsdklfjndsjf", startDate)
-    //         return startDate;
-    //       },
-    //       message: function(params){
-    //           const { value } = params
-    //           return msg || `Начальная дата: 0, конечная дата: ${value} `
-    //       }
-    //     })
-    //   }
-    //   Yup.addMethod(Yup.string, 'magicDate', magicDate)
-
-    //   const validateSchema = yup.object().shape({
-    //       startDate: yup.date().requiere(),
-    //       endDate: yup.date().magicDate(yup.ref('startDate'), 'Проверка периода дат'))
-    //   })
-
-
-
+    // const { isAuthentificated, setAuthentificated } = useContext(AuthContext);
 
     const properForm = Yup.object({
         username: Yup.string()
@@ -64,7 +40,10 @@ export default function LogIn() {
             })
     });
 
+    const { setIsAuthentificated } = useContext(AuthContext);
+
     const onSubmit = (values) => {
+        setIsAuthentificated(true);
         navigate("/");
     }
 
@@ -79,6 +58,7 @@ export default function LogIn() {
             onSubmit={onSubmit}
         >
             <>
+                {/* {console.log(isAuthentificated)} */}
                 <section className="signin-section">
                     <div className="main-forms">
                         <Form className="m-form">

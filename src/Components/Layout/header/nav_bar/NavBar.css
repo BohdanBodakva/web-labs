@@ -24,6 +24,10 @@ li:not(:hover) {
     transition: 0.8s;
 }
 
-.cart-l-i{
+.cart-l-i {
     margin-left: 50px;
+}
+
+.sign-out-link {
+    color: blue;
 }

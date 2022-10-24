@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "./SignIn.css";
 import { Formik, Form, useField, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import YupPassword from 'yup-password';
 import { Link, Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/authentification_context/Auth";
 YupPassword(Yup);
 
 const CustomTextInput = ({ label, onChange, ...props }) => {
@@ -27,6 +28,7 @@ const CustomTextInput = ({ label, onChange, ...props }) => {
 export default function SignIn() {
 
     const navigate = useNavigate();
+    const { isAuthentificated, setAuthentificated } = useContext(AuthContext);
 
     const properForm = Yup.object({
         username: Yup.string()
@@ -44,10 +46,11 @@ export default function SignIn() {
             .oneOf([Yup.ref("password"), null], "Passwords must match")
     });
 
-
+    const { setIsAuthentificated } = useContext(AuthContext);
 
     const onSubmit = (values) => {
         localStorage.setItem(values.username, values.password);
+        setIsAuthentificated(true);
         navigate("/");
     }
 
