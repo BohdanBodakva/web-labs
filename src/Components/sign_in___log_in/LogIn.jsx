@@ -33,7 +33,7 @@ export default function LogIn() {
             .oneOf([Object.keys(localStorage), null], "This user doesn't exist"),
         password: Yup.string()
             .required("Required")
-            .test("superior", "Incorrect password", function (password) {
+            .test("Incorrect password", function (password) {
                 const username = Yup.ref("username");
                 return password === localStorage.getItem(this.resolve(username));
             })
