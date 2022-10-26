@@ -1,0 +1,17 @@
+.more {
+    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.more a {
+    font-weight: bold;
+    color: rgb(255, 153, 0);
+}
+
+.more:hover {
+    transition: 0.8s;
+    font-size: 20px;
+    margin-bottom: 20px;
+}

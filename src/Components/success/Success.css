@@ -1,0 +1,55 @@
+.success-section {
+    margin-top: 150px;
+    background-color: rgb(223, 253, 209);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.success-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.success-b{
+    transition: 0.8s;
+    width: 130px;
+    height: 55px;
+    background-color: rgb(239, 235, 235);
+    color: green;
+    border: 2px solid green;
+    border-radius: 15px;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.success-b:hover {
+    transition: 0.8s;
+    border-color: green;
+    color: green;
+    box-shadow: 0 0 45px 22px rgba(130, 227, 85, 0.4);
+}
+
+.success-img {
+    width: 200px;
+    padding-top: 20px;
+}
+
+.success-upper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-tr {
+    display: flex;
+    justify-content: center;
+}
+
+.thanks {
+    font-size: 40px;
+    color: rgb(35, 84, 5);
+}
