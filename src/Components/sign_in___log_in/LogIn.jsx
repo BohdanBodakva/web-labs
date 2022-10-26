@@ -26,7 +26,6 @@ const CustomTextInput = ({ label, onChange, ...props }) => {
 export default function LogIn() {
 
     const navigate = useNavigate();
-    // const { isAuthentificated, setAuthentificated } = useContext(AuthContext);
 
     const properForm = Yup.object({
         username: Yup.string()
